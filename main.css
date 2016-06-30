@@ -211,15 +211,18 @@ html.loading body {
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
     filter: blur(2px);
+    //background-color: rgba(255, 255, 255, 0.5);
+    //box-shadow: inset 0 0 1500px 1500px rgba(255, 255, 255, 0.1);
     opacity: 0.8;
-
-    //left:-15px;
-    //right:-15px;
-    //top:-15px;
-    //bottom:-15px;
 
 }
 
+.nav_bar
+{
+	z-index: 1000;
+	box-shadow: inset 0 0 1500px 1500px rgba(255, 255, 255, 0.1);
+	//background-color: rgba(255, 255, 255, 0.5);
+}
 .nav_options
 {
 	position: relative;
@@ -296,7 +299,7 @@ nav ul li a {
 	z-index:999;
 
 
-	transition: all 0.7s ease;
+	transition: all 0.5s ease;
 }
 
 
@@ -419,33 +422,80 @@ p
 	top : 15px;
 }
 
+/*
 p {
 	text-align:center;
 	
 }
-
+*/
 
 .name
 {
 
 }
 
-.about
+.resume
 {
+
 	display : none;
+	width: 80%;
 	opacity: 0;
 	position: relative;
 	z-index:999;
 	width: 100%;
 	top: 100px;
-	text-align: center;
-	padding: 20% 20%;
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 }
 
+.resume_section
+{
+	padding: 3%;
+	//outline: #fff solid thick;
+	background-color: rgba(255, 255, 255, 0.5);
+}
 
+.resume_subsection
+{
 
+}
 
+.resume_divider
+{
+	height: 1rem;
+}
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+#inline_div p
+{
+	display: inline;
+}
+
+#toleft
+{
+	//display: inline;
+	text-align: left;
+}
+
+#toright
+{
+
+	//display: inline;
+	text-align: right;
+}
+
+.resume_section p
+{
+	text-align: left;
+}
+
+.resume_section ul li
+{
+}
 /*
 
 

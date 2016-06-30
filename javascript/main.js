@@ -97,24 +97,13 @@ $(document).delegate('*', 'mouseenter', function (e) {
 });
 
 */
-function hide_tabgs()
-{
-	$(".about").css( {"opacity": "0" });
-	$(".projects").css( {"opacity": "0" });
-	$(".connect").css( {"opacity": "0" } );
-}
 
-function undisplay()
-{
-	$(".about").css( "display", "none" );
-	$(".projects").css( "display", "none" );
-	$(".contact").css( "display", "none" );
-}
+
 
 
 function click_home()
 {
-	hide_tabgs();
+	hide_tags();
 
 	setTimeout( click_clear, 500 );
 	setTimeout( undisplay, 500 );
@@ -123,18 +112,21 @@ function click_home()
 
 function click_projects()
 {
-	hide_tabgs();
-	click_blur();
+	swap_tag_routine();
 	$(".projects").css( "display" , "block" );
 	setTimeout( function() {
-		$(".projects").css({  "opacity": "1" });
+	$(".projects").css({  "opacity": "1" });
 	}, 500 )
 }
 
-function click_about()
+function click_resume()
 {
-	hide_tabgs();
-	click_blur( ".ibg-bg",  );
+	//click_home();
+	swap_tag_routine();
+	$(".resume").css( "display" , "block" );
+	setTimeout( function() {
+		$(".resume").css({  "opacity": "1" });
+	}, 500 )
 
 }
 
@@ -156,9 +148,7 @@ function blur(  )
 
 function click_connect()
 {
-
-	hide_tabgs();
-	click_blur();
+	swap_tag_routine();
 	$(".connect").css( "display" , "block" );
 	setTimeout( function() {
 		$(".connect").css({  "opacity": "1" });
@@ -192,6 +182,29 @@ function click_clear()
 	});
 	
 };
+
+function swap_tag_routine()
+{
+	hide_tags();
+	undisplay();
+	click_blur();
+}
+
+function hide_tags()
+{
+	$(".resume").css( {"opacity": "0" });
+	$(".projects").css( {"opacity": "0" });
+	$(".connect").css( {"opacity": "0" } );
+}
+
+function undisplay()
+{
+	$(".resume").css( "display", "none" );
+	$(".projects").css( "display", "none" );
+	$(".connect").css( "display", "none" );
+}
+
+
 
 // to type
 $(window).load(function() {
