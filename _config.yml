@@ -1,5 +1,5 @@
 markdown: redcarpet
-baseurl: /DayLightDocs
+baseurl: /
 exclude: ['runLocal.sh', 'README.md', '.gitignore']
 lsi: false
  safe: true
