@@ -1,0 +1,203 @@
+---
+layout: content
+---
+
+<!--main-->
+<div class="container">
+	<div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+
+
+        <ul class="nav nav-stacked" id="sidebar">
+			<li><a href="#sec_partools">Partools</a></li>
+			<li><a href="#sec_daylight">DayLight</a></li>
+			<li><a href="#sec_xSQL">xSQL</a></li>
+			<li>
+        <a class="toCollapse" href="#sec_MLproject">
+          Machine Learning Toy projects
+        </a>
+        <ul class="nav nav-stacked hideable">
+					<li><a href="#sec_symbolrecognizer">Symbol Recognizer</a></li>
+					<li><a href="#sec_genderclassifier">Gender Classifier</a></li>
+					<li><a href="#sec_contentawareresizing">Content Aware Resizing</a></li>
+					<li><a href="#sec_framesearching">Frame Searching</a></li>
+				</ul>
+      </li>
+
+        </ul>
+
+      </div><!--/left-->
+
+
+      <!--right-->
+      <div class="col-md-9">
+
+        <h2 id="sec_partools">Partools:
+          <a class="ghbutton" href="https://github.com/matloff/partools" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+          <p class="lead">a Sensible Package for Large Data Sets</p>
+        </h2>
+        <p>
+          Role: co-author
+        </p>
+        <p>
+          The partools package is a general framework for parallel processing of
+          large data sets and/or highlycomputational algorithms. It is the
+          "un-MapReduce," avoiding that paradigm while retaining the philosophy of
+          highly-distributed memory objects and files of Hadoop and Spark.
+        </p>
+        <hr>
+
+        <h2 id="sec_daylight">DayLight:
+          <a class="ghbutton" href="https://github.com/Shunxu-H/DayLight" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+          <p class="lead">3D Object Editor & Batch Renderer</p>
+        </h2>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          DayLight is built with an abstraction of OpenGL functions. It manages
+          OpenGL resources so the users do not have to manually free openGL resources.
+          In addition, it hides the complicated construction for objects like
+          framebuffer objects, texture buffer objects such that the users can use
+          OpenGL resources with simple functions like <code>use()</code>,
+          <code>stopUsing()</code>, or <code>isInUse()</code>.
+        </p>
+        <p>
+          DayLight utilizes X11 and EGL for window management. It supports batch
+          rendering of large scene with great efficiency in headless modes
+        </p>
+        <p>
+          DayLight Utilizes deferred shading to improve real time rendering of
+          multiple light sources and post processing (shadow mapping, bloom
+          effect etc). It supports basic edits (translation, rotation, scaling,
+          duplication) on instantiated objects to minimize GPU memory usage.
+        </p>
+        <p>
+          <font color="red">Note: Documentation will be released around May 2018</font>
+        </p>
+
+        <hr>
+
+        <h2 id="sec_xSQL">xSQL:
+          <a class="ghbutton" href="https://github.com/Shunxu-H/DIY-Database" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+          <p class="lead">an imitation of MySQL because I can</p>
+        </h2>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          xSQL is built with a parser that imitates the behavior of a real database
+          server using Bison (C++ version of YACC) and Flex (C++ version of LEX)
+          to generate an optimizable and compilable expression tree
+        </p>
+        <p>
+          It is nicely integrated with functionalities of a database, such as
+          creation, projection, selection, and indexing on selected columns
+          Processed the expression tree with a set of rewrite rules before its
+          execution and optimizes it by using a hash or B+ Tree index when
+          available
+        </p>
+
+        <hr>
+
+        <h2 id="sec_MLproject">Machine Learning Toy projects:
+          <p class="lead">Collections of Machine Learning projects</p>
+        </h2>
+        <h3 id="sec_symbolrecognizer">
+          Symbol Recognizer
+          <a class="ghbutton" href="https://github.com/Shunxu-H/SymbolRecognizer" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+        </h3>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          The  backbone of this program is an 5-layer convolutional neural network
+          in Tensor Flow. It is trained with a large collection of handwritten
+          digits for less 30 minutes but with accuracy of 99%+.
+        </p>
+        <p>
+          It incoporates a user interface using OpenCV so user can write with
+          mouse.
+        </p>
+
+        <h3 id="sec_genderclassifier">
+          Gender Classifier
+          <a class="ghbutton" href="https://github.com/Shunxu-H/ANNGenderClassifier" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+        </h3>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          The  backbone of this program is an 3-layer convolutional neural
+          network built with Java. It is trained with a large collection of
+          frontal headshot for around 10 minutes but with accuracy of 98%+.
+        </p>
+
+        <h3 id="sec_contentawareresizing">
+          Content Aware Resizing
+        </h3>
+        <p>
+          Role: Implementor
+        </p>
+        <p>
+          This program is an implementation of
+          <a href="http://perso.crans.org/frenoy/matlab2012/seamcarving.pdf">
+          Seam Carving for Content-Aware Image Resizing</a>.
+        </p>
+        <p>
+          It finds and deletes the least resistent seam horizontally or
+          vertically such that the alteration of the image is least noticeable.
+        </p>
+        <h4>Example:</h4>
+        Shrink an image vertically <br />
+        <img class="examplePic" src="{{site.baseurl}}/images/projects/originalImg.jpg"/>
+        <img class="examplePic" src="{{site.baseurl}}/images/projects/resizedImg.png"/>
+        <p>
+          Note that it preserves the leaves and the buildings and deletes mostly
+          pixles of the sky.
+        </p>
+        <h3 id="sec_framesearching">
+          Frame and Object Searching in a Video with Bag of Visual Words
+        </h3>
+        <p>
+          Role: Implementor
+        </p>
+        <p>
+          The backbone of the program is built with 5,000 visual vocabularies
+          using K-Mean with SIFT descriptors for patches across scenes from one
+          episode of Friends.
+        </p>
+        <p>
+          it maps an image’s features into its bag-of-words histogram with Stop
+          list and tf-idf to optimize the search results. The results are great:
+          it successfully queries frames of highest similarity with the selected
+          region of an image using the normalized scaler product of two scene's
+          bag-of-word histogram
+        </p>
+        <h4>Example:</h4>
+        Query Object <br />
+        <img style="width:100%;" src="{{site.baseurl}}/images/projects/query.png"/>
+
+        Top Results <br />
+        <img style="width:100%;" src="{{site.baseurl}}/images/projects/result.png"/>
+        <p>
+          Note that it preserves the leaves and the buildings and deletes mostly
+          pixles of the sky.
+        </p>
+        <hr>
+
+
+
+
+</div>

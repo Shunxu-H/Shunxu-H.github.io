@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Shunxu H. </title>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+			integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+			crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/JavaScript/main.js"></script>
+		<script type="text/javascript" src="/JavaScript/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/JavaScript/scripts.js"></script>
+		<script type="text/javascript" src="/JavaScript/jquery.interactive_bg.js"></script>
+		<script type="text/javascript" src="/JavaScript/typed.js"></script>
+
+
+		<link rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+			integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="Text/css" href="/CSS/main.css">
+		<link href="/CSS/bootstrap.min.css" rel="stylesheet">
+		<link href="/CSS/styles.css" rel="stylesheet">
+
+
+	</head>
+
+  <body>
+
+		<div class="bg" data-ibg-bg="/images/me.jpg" >
+	    <div class="intro_bg "></div>
+
+	    <div class="intro">
+	          <span class="name"></span>
+	    </div>
+			<div class="flow" data-ibg-bg="/images/flow_me.png" >
+			</div>
+		</div>
+
+		<nav class="nav_bar ">
+  <ul class="nav_options">
+    <li>
+      <a href="/index.html">HOME</a>
+    </li>
+    <li>
+      <a href="/resume.html">RESUME</a>
+    </li>
+    <li>
+      <a href="/projects.html">PROJECTS</a>
+    </li>
+    <li>
+      <a href="/connect.html">CONNECT</a>
+    </li>
+
+
+            <!--
+
+            <li>
+              <div class="project"
+                      onclick="click_home();"
+                      onmouseover="this.style.cursor='pointer'"
+                      onmouseout="this.style.cursor='default'" > HOME </div></li>
+            <li> <div class="project"
+                      onclick="click_resume();"
+                      onmouseover="this.style.cursor='pointer'"
+                      onmouseout="this.style.cursor='default'" > RESUME </div></li>
+            <li> <div class="project"
+                      onclick="click_projects();"
+                      onmouseover="this.style.cursor='pointer'"
+                      onmouseout="this.style.cursor='default'" > PROJECTS </div></li>
+            <li> <div class="project"
+                      onclick="click_connect();"
+                      onmouseover="this.style.cursor='pointer'"
+                      onmouseout="this.style.cursor='default'" > CONNECT </div></li>
+            -->
+    </ul>
+    <nav id="nav_glass">
+      <ul>
+        <li> HOME      </li>
+        <li> RESUME    </li>
+        <li> PROJECTS  </li>
+        <li> CONNECT   </li>
+      </ul>
+    </nav>
+</nav>
+
+
+    <script type="text/javascript">
+    	$(".bg").interactive_bg({
+    		strength: 35,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+    		scale: 1.05,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+    		animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+    		contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+    		wrapContent: false         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+    	});
+    </script>
+
+    <script type="text/javascript">
+    	$(".flow").interactive_bg({
+    		strength: 10,              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+    		scale: 1.05,               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+    		animationSpeed: "100ms",   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+    		contain: false,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+    		wrapContent: false         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+    	});
+    </script>
+
+		<script type="text/javascript">
+  $(window).load(function() {
+    click_blur();
+    setTimeout( function() {
+      $(".tag").css({  "opacity": "1" });
+      }, 500 )
+  })
+</script>
+
+
+<div class="row tag content ">
+
+<!--main-->
+<div class="container">
+	<div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+
+
+        <ul class="nav nav-stacked" id="sidebar">
+			<li><a href="#sec_partools">Partools</a></li>
+			<li><a href="#sec_daylight">DayLight</a></li>
+			<li><a href="#sec_xSQL">xSQL</a></li>
+			<li>
+        <a class="toCollapse" href="#sec_MLproject">
+          Machine Learning Toy projects
+        </a>
+        <ul class="nav nav-stacked hideable">
+					<li><a href="#sec_symbolrecognizer">Symbol Recognizer</a></li>
+					<li><a href="#sec_genderclassifier">Gender Classifier</a></li>
+					<li><a href="#sec_contentawareresizing">Content Aware Resizing</a></li>
+					<li><a href="#sec_framesearching">Frame Searching</a></li>
+				</ul>
+      </li>
+
+        </ul>
+
+      </div><!--/left-->
+
+
+      <!--right-->
+      <div class="col-md-9">
+
+        <h2 id="sec_partools">Partools:
+          <a class="ghbutton" href="https://github.com/matloff/partools" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+          <p class="lead">a Sensible Package for Large Data Sets</p>
+        </h2>
+        <p>
+          Role: co-author
+        </p>
+        <p>
+          The partools package is a general framework for parallel processing of
+          large data sets and/or highlycomputational algorithms. It is the
+          "un-MapReduce," avoiding that paradigm while retaining the philosophy of
+          highly-distributed memory objects and files of Hadoop and Spark.
+        </p>
+        <hr>
+
+        <h2 id="sec_daylight">DayLight:
+          <a class="ghbutton" href="https://github.com/Shunxu-H/DayLight" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+          <p class="lead">3D Object Editor & Batch Renderer</p>
+        </h2>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          DayLight is built with an abstraction of OpenGL functions. It manages
+          OpenGL resources so the users do not have to manually free openGL resources.
+          In addition, it hides the complicated construction for objects like
+          framebuffer objects, texture buffer objects such that the users can use
+          OpenGL resources with simple functions like <code>use()</code>,
+          <code>stopUsing()</code>, or <code>isInUse()</code>.
+        </p>
+        <p>
+          DayLight utilizes X11 and EGL for window management. It supports batch
+          rendering of large scene with great efficiency in headless modes
+        </p>
+        <p>
+          DayLight Utilizes deferred shading to improve real time rendering of
+          multiple light sources and post processing (shadow mapping, bloom
+          effect etc). It supports basic edits (translation, rotation, scaling,
+          duplication) on instantiated objects to minimize GPU memory usage.
+        </p>
+        <p>
+          <font color="red">Note: Documentation will be released around May 2018</font>
+        </p>
+
+        <hr>
+
+        <h2 id="sec_xSQL">xSQL:
+          <a class="ghbutton" href="https://github.com/Shunxu-H/DIY-Database" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+          <p class="lead">an imitation of MySQL because I can</p>
+        </h2>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          xSQL is built with a parser that imitates the behavior of a real database
+          server using Bison (C++ version of YACC) and Flex (C++ version of LEX)
+          to generate an optimizable and compilable expression tree
+        </p>
+        <p>
+          It is nicely integrated with functionalities of a database, such as
+          creation, projection, selection, and indexing on selected columns
+          Processed the expression tree with a set of rewrite rules before its
+          execution and optimizes it by using a hash or B+ Tree index when
+          available
+        </p>
+
+        <hr>
+
+        <h2 id="sec_MLproject">Machine Learning Toy projects:
+          <p class="lead">Collections of Machine Learning projects</p>
+        </h2>
+        <h3 id="sec_symbolrecognizer">
+          Symbol Recognizer
+          <a class="ghbutton" href="https://github.com/Shunxu-H/SymbolRecognizer" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+        </h3>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          The  backbone of this program is an 5-layer convolutional neural network
+          in Tensor Flow. It is trained with a large collection of handwritten
+          digits for less 30 minutes but with accuracy of 99%+.
+        </p>
+        <p>
+          It incoporates a user interface using OpenCV so user can write with
+          mouse.
+        </p>
+
+        <h3 id="sec_genderclassifier">
+          Gender Classifier
+          <a class="ghbutton" href="https://github.com/Shunxu-H/ANNGenderClassifier" target="_blank">
+            <button type="button"  class="btn btn-default">View on GitHub</button>
+          </a>
+        </h3>
+        <p>
+          Role: Author
+        </p>
+        <p>
+          The  backbone of this program is an 3-layer convolutional neural
+          network built with Java. It is trained with a large collection of
+          frontal headshot for around 10 minutes but with accuracy of 98%+.
+        </p>
+
+        <h3 id="sec_contentawareresizing">
+          Content Aware Resizing
+        </h3>
+        <p>
+          Role: Implementor
+        </p>
+        <p>
+          This program is an implementation of
+          <a href="http://perso.crans.org/frenoy/matlab2012/seamcarving.pdf">
+          Seam Carving for Content-Aware Image Resizing</a>.
+        </p>
+        <p>
+          It finds and deletes the least resistent seam horizontally or
+          vertically such that the alteration of the image is least noticeable.
+        </p>
+        <h4>Example:</h4>
+        Shrink an image vertically <br />
+        <img class="examplePic" src="/images/projects/originalImg.jpg"/>
+        <img class="examplePic" src="/images/projects/resizedImg.png"/>
+        <p>
+          Note that it preserves the leaves and the buildings and deletes mostly
+          pixles of the sky.
+        </p>
+        <h3 id="sec_framesearching">
+          Frame and Object Searching in a Video with Bag of Visual Words
+        </h3>
+        <p>
+          Role: Implementor
+        </p>
+        <p>
+          The backbone of the program is built with 5,000 visual vocabularies
+          using K-Mean with SIFT descriptors for patches across scenes from one
+          episode of Friends.
+        </p>
+        <p>
+          it maps an image’s features into its bag-of-words histogram with Stop
+          list and tf-idf to optimize the search results. The results are great:
+          it successfully queries frames of highest similarity with the selected
+          region of an image using the normalized scaler product of two scene's
+          bag-of-word histogram
+        </p>
+        <h4>Example:</h4>
+        Query Object <br />
+        <img style="width:100%;" src="/images/projects/query.png"/>
+
+        Top Results <br />
+        <img style="width:100%;" src="/images/projects/result.png"/>
+        <p>
+          Note that it preserves the leaves and the buildings and deletes mostly
+          pixles of the sky.
+        </p>
+        <hr>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
