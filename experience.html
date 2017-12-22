@@ -11,11 +11,24 @@ layout: content
 <link type="text/css" rel="stylesheet" href="styles/style-responsive.css">
 
 <div class="container">
-  <div id="responsive" class="">
+  <div id="responsive" class="row" data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+    <div class="col-sm-2">
+      <ul id="sidebar" class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+        <li><a href="#graduation">Graduation, YAY</a></li>
+        <li><a href="#reserach">Research Assistance</a></li>
+        <li><a href="#softwaredeveloper">Software Developer</a></li>
+        <li><a href="#webdeveloper">Web Developer</a></li>
+        <li><a href="#artist">3D Asset Artist</a></li>
+        <li><a href="#admission">UCD Admission</a></li>
 
+      </ul>
+    </nav>
+    </div>
+    <div class="col-sm-10">
       <ul class="timeline">
 
-        <li class="timeline-inverted">
+
+        <li id="graduation" class="timeline-inverted">
             <div class="timeline-badge ">	&#127890;</div>
             <div class="timeline-panel ">
               <div class="timeline-heading"><h4 class="timeline-title">Graduation with honors @ University of California, DAVIS</h4>
@@ -35,8 +48,9 @@ layout: content
             </div>
           </div>
         </li>
+
         <li>
-            <div class="timeline-badge ">	&#127890;</div>
+            <div id="reserach" class="timeline-badge ">	&#127890;</div>
             <div class="timeline-panel ">
               <div class="timeline-heading"><h4 class="timeline-title">Computer Vision Lab Assistance @ University of California, DAVIS</h4>
                 <small style="color: #DFDFDF" class="text-muted"> &#128336; March 1st, 2017 - Present</small>
@@ -65,7 +79,8 @@ layout: content
             </div>
         </li>
 
-        <li class="timeline-inverted">
+
+        <li id="softwaredeveloper" class="timeline-inverted">
             <div class="timeline-badge ">&#9874;</div>
             <div class="timeline-panel ">
               <div class="timeline-heading"><h4 class="timeline-title">Software Developer @ University of California</h4>
@@ -92,7 +107,7 @@ layout: content
         </li>
 
         <li>
-            <div class="timeline-badge ">&#31038;</div>
+            <div id="webdeveloper" class="timeline-badge ">&#31038;</div>
             <div class="timeline-panel ">
                 <div class="timeline-heading">
                   <h4 class="timeline-title">Web Developer @ DrCaring, San Jose, CA</h4>
@@ -120,7 +135,8 @@ layout: content
             </div>
         </li>
 
-        <li class="timeline-inverted">
+
+        <li id="artist" class="timeline-inverted">
             <div class="timeline-badge ">&#9874;</div>
             <div class="timeline-panel ">
                 <div class="timeline-heading"><h4 class="timeline-title">3D Asset Artist @ University of California, DAVIS</h4>
@@ -144,7 +160,7 @@ layout: content
           </div>
         </li>
 
-        <li>
+        <li id="admission">
             <div class="timeline-badge ">&#127979;</div>
             <div class="timeline-panel ">
                 <div class="timeline-heading"><h4 class="timeline-title">University of California, DAVIS</h4>
@@ -153,37 +169,8 @@ layout: content
                 <div class="timeline-body"><p>First Day of School</p></div>
             </div>
         </li>
-
-
+    </div>
 
 
   </div>
 </div>
-<!--
-
-<div class="resume_section one-edge-shadow">
-  <div class="center_outer"> <div class="center_inner">
-    <h1> EMPLOYMENT </h1>
-    <div id="inline_div">
-          <p id="toleft"> UC Davis Computer Science Department - Davis, CA </p>
-          <p id="toright"> June 2015 - May 2016 </p>
-    </div>
-
-    <ul >
-          <li>  Lorem ipsum dolor sit amet, consectetur adipiscing elit </li>
-          <li> Praesent congue varius arcu id commodo. Suspendisse cursus elementum sagittis. </li>
-          <li>  Nullam lacinia in leo a imperdiet. Etiam lacinia sapien vitae arcu dapibus varius. </li>
-    </ul>
-  </div> </div>
-</div>
-
-<div class="resume_divider"> </div>
-
-<div class="resume_section one-edge-shadow">
-  <div class="center_outer"> <div class="center_inner">
-  <h1> EDUCATION </h1>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue varius arcu id commodo. Suspendisse cursus elementum sagittis. Nullam lacinia in leo a imperdiet. Etiam lacinia sapien vitae arcu dapibus varius. Suspendisse potenti. Integer nulla augue, cursus non ultrices a, luctus vel ante. Nam vitae sagittis purus. </p>
-
-  </div> </div>
-</div>
--->

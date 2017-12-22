@@ -549,4 +549,5 @@ ul li ul.selected {
 .sidebar {
 		top:0;
 		z-index: 9999 !important;
+		width: 200px
 }

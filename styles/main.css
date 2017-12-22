@@ -283,7 +283,7 @@ hr {
   border: 0 !important;
   border-radius: 0;
   background: #366794;
-  
+
 }
 #topbar .navbar-top-links li {
   display: inline-block;
@@ -558,7 +558,7 @@ hr {
   font-size: 25px;
   font-weight: 300;
   display: inline-block;
-  
+
 }
 .page-title-breadcrumb .page-header .page-subtitle {
   font-size: 14px;
@@ -808,7 +808,6 @@ hr {
   padding-top: 50px !important;
 }
 #sidebar {
-  background: #fff;
 }
 .navbar-static-side {
   transition: 0.3s all linear;
@@ -831,7 +830,7 @@ background: linear-gradient(to bottom, #f2f5f7 0%,#d7dee3 51%,#f6f8f9 100%,#f6f8
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f7', endColorstr='#f6f8f9',GradientType=0 ); /* IE6-9 */
       outline: none;
       color:#828282;
-    
+
 }
 
 .navbar-static-side ul li.active a {
@@ -4551,7 +4550,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #ffffff;
   border: 1px solid #1f68b1;
-  
+
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -7085,15 +7084,15 @@ background: #1E1E1E;
 }
 
 #topbar .navbar-top-links li.open > a,
-#topbar .navbar-top-links li.open > a:hover, 
+#topbar .navbar-top-links li.open > a:hover,
 #topbar .navbar-top-links li.open > a:focus ,
-#topbar .navbar-top-links li > a:hover, 
+#topbar .navbar-top-links li > a:hover,
 #topbar .navbar-top-links li > a:focus,
 #topbar #topbar-search input ,
 .navbar-static-side ul li,
 #wrapper,
 #sidebar{
-background: #3C3C3C !important;
+
 }
 .navbar-static-side ul li .nav-second-level li a{
 background: #2C2C2C;
