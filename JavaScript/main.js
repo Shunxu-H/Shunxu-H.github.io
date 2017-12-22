@@ -1,6 +1,6 @@
 
 /*================== loader ===========================*/
-$(window).load(function() {
+$(window).on("load", function() {
 //$(document).ready(function() {
 	// Animate loader off screen
 	$(".se-pre-con").fadeOut("slow");
@@ -190,7 +190,7 @@ function swap_tag_routine()
 
 
 // to type
-$(window).load(function() {
+$(window).on("load", function() {
       $(function(){
           $(".name").typed({
               <!-- strings: ["    ", "Hi, I am <strong> Shunxu</strong>. ^300 <br>And I ^500 make things."], -->

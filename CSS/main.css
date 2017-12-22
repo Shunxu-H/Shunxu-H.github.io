@@ -23,6 +23,9 @@ html {
 	font-family: Helvetica, sans-serif;
 }
 
+body{
+	position: relative;
+}
 
 /************** LOADER ICONS ******************/
 html.loading body {
@@ -205,15 +208,15 @@ html.loading body {
 
 	position: fixed;
 	z-index: 999;
-	background-color: #FDF5EA;
+	background-color: #151515;
 	-webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
     filter: blur(2px);
-    //background-color: rgba(255, 255, 255, 0.5);
-    //box-shadow: inset 0 0 1500px 1500px rgba(255, 255, 255, 0.1);
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 1500px 1500px rgba(255, 255, 255, 0.1);
+    opacity: 0.9;
 
 }
 
@@ -221,7 +224,7 @@ html.loading body {
 {
 	z-index: 1000;
 	box-shadow: inset 0 0 1500px 1500px rgba(255, 255, 255, 0.1);
-	//background-color: rgba(255, 255, 255, 0.5);
+	/*background-color: rgba(255, 255, 255, 0.5);*/
 }
 .nav_options
 {
@@ -236,8 +239,6 @@ nav {
 	text-align: center;
 	padding: 20px 0;
 	transition: all 0.5s ease;
-
-
 }
 
 
@@ -514,6 +515,7 @@ nav ul li a {
 
 .ghbutton{
   float: right;
+	margin: 0 15px;
 }
 
 .examplePic{
@@ -521,19 +523,30 @@ nav ul li a {
 }
 
 
-.hideable li ul {
-    display: none  !important;
+ul li .hideable {
+  display: none  !important;
 }
 
-ul li ul li a {
+ul li .hideable li a {
 	left:10%;
 	width: 90%;
 }
 
-.hideable li:hover ul {
+ul li:hover ul {
     display: block !important;
 }
 
-.hideable li ul.selected {
+ul li ul.selected {
     display: block !important;
+}
+
+.affix {
+		top:0;
+		width: 100%;
+		z-index: 9999 !important;
+}
+
+.sidebar {
+		top:0;
+		z-index: 9999 !important;
 }

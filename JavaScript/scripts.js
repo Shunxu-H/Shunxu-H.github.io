@@ -1,10 +1,10 @@
 
 $(document).ready(function(){/* activate sidebar */
-$('#sidebar').affix({
-  offset: {
-    top: 235
-  }
-});
+  // $('#sidebar').affix({
+  //   offset: {
+  //     top: 235
+  //   }
+  // });
 
 /* activate scrollspy menu */
 var $body   = $(document.body);
