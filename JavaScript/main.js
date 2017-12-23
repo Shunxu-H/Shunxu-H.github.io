@@ -1,41 +1,34 @@
 
 /*================== loader ===========================*/
 $(window).on("load", function() {
-//$(document).ready(function() {
-	// Animate loader off screen
 	$(".se-pre-con").fadeOut("slow");
 	clear_all();
 });
 
-function clear_all()
-{
-	$(".bg ").css({
-		"-webkit-filter": "blur(0px)",
-	    "-moz-filter" : "blur(0px)" ,
-	    "-o-filter" : "blur(0px)" ,
-	    "-ms-filter" : "blur(0px)" ,
-	    "filter" : "blur(0px)" ,
-	    "opacity" : "1"
-	});
-};
 
 function blur_all()
 {
-	$(".bg ").css({
+	$(".bg").css({
 		"-webkit-filter": "blur(20px)",
-	    "-moz-filter" : "blur(20px)" ,
-	    "-o-filter" : "blur(20px)" ,
-	    "-ms-filter" : "blur(20px)" ,
-	    "filter" : "blur(20px)" ,
-	    "opacity" : "0.8"
+    "-moz-filter" : "blur(20px)" ,
+    "-o-filter" : "blur(20px)" ,
+    "-ms-filter" : "blur(20px)" ,
+    "filter" : "blur(20px)" ,
+    "opacity" : "0.8"
 	});
 }
 
-$(function()
+function clear_all()
 {
-	blur_all();
-});
-
+	$(".bg").css({
+		"-webkit-filter": "blur(0px)",
+    "-moz-filter" : "blur(0px)" ,
+    "-o-filter" : "blur(0px)" ,
+    "-ms-filter" : "blur(0px)" ,
+    "filter" : "blur(0px)" ,
+    "opacity" : "1"
+	});
+}
 
 
 // auto hide the nav bar
@@ -56,21 +49,20 @@ $(function()
 
 
 
- // change background size on window resize
- $(window).resize(function() {
+// change background size on window resize
+$(window).resize(function() {
  	$(".bg > .ibg-bg").css({
     	width: $(window).outerWidth(),
     	height: $(window).outerHeight()
  	})
 })
 
- $(window).resize(function() {
+$(window).resize(function() {
  	$(".flow > .ibg-bg").css({
     	width: $(window).outerWidth(),
     	height: $(window).outerHeight()
  	})
 })
-
 
 
 // get cursor position
@@ -84,29 +76,6 @@ $( ".project_window_right" ).on( "mouseenter", function( event ) {
   $( ".project_window_right" ).css( { "color" : "black "} );
 
 });
-
-/*
-// see what is clicked
-$(document).delegate('*', 'click', function (e) {
-    console.log(e.target);
-});
-
-// see what is on hovered
-$(document).delegate('*', 'mouseenter', function (e) {
-    console.log(e.target);
-});
-
-*/
-
-
-
-
-function click_home()
-{
-
-	setTimeout( click_clear, 500 );
-}
-
 
 function click_projects()
 {
@@ -142,16 +111,6 @@ function blur(  )
 		});
 	}
 
-}
-
-function click_connect()
-{
-	swap_tag_routine();
-	$(".connect").css( "display" , "block" );
-	setTimeout( function() {
-		$(".connect").css({  "opacity": "1" });
-	}, 500 )
-	//$(".icon").css("width", "14%");
 }
 
 function click_blur()
